@@ -1,53 +1,78 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Tasty Recipes</title>
-        <link rel="stylesheet" href="css/normalize.css"> <!-- used as reset -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <h1>TASTY RECIPES</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="calendar.html">Calendar</a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#" class="dropbtn">Recipes</a>
-                            <div class="dropdown-content">
-                                <a href="meatballs.html">Meatballs</a>
-                                <a href="pancakes.html">Pancakes</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="utf-8">
+  <title>Max Körlinge - Personal Site</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Oswald:300" rel="stylesheet">
 
-        <section id="home">
-            <h3 class="hidden">Home Page</h3>
-            <a href="calendar.html">
-                <img alt="table with tomatoes pasta and a wooden spoon, linking to calendar site" src="img/home1.jpg">
-            </a>
-            <a class="button" href="calendar.html">Check out the recipe of the day!</a>
-        </section>
+  <meta name="viewport" content="width =device-width, initial-scale =1.0">
+  <meta name="description" content="Portfolio site for Max Körlinge: KTH Bachelor of Science in Computer Engineering student, fencing coach at FFF Fäktning, and harmonica player.">
+</head>
 
-        <footer>
-            <a href="https://www.facebook.com/max.korlinge">
-                <img src="img/fb.jpg" alt="Facebook icon" class = "social-icon">
-            </a>
-            <a href="https://www.twitter.com/maxkorlinge">
-                <img src="img/twitter.png" alt="Twitter icon" class= "social-icon">
-            </a>
-            <p>&copy; 2017 <a href="http://maxk.se">Max Körlinge.</a></p>
-        </footer>
-    </body>
-</html>
+<body>
+  <div id="wrapper">
+    <header>
+      <p id="titel">MAX KÖRLINGE</p>
+      <p id="undertitel"><a class="header-links" onclick="currentSlide(2)">ingenjörsstudent</a>, <a class="header-links" onclick="currentSlide(1)">fäkttränare</a>, <a class="header-links" onclick="currentSlide(3)">munspelare</a></p>
+    </header>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+    <div class="job-container fade">
+      <img src="img/faktbild.png" alt="fäktbild">
+      <div class="text-box">
+        <p>Förbundskapten för de svenska U17 och U20-landslagen, och anställd klubbtränare på FFF Fäktning i Stockholm.</p>
+        <ul class="text-ul">
+          <li>Del av den nuvarande landslagsledningen för Svensk Fäktning.</li>
+          <li>Tränar fäktare i alla åldrar och nivåer, från nybörjarnivå till landslagsnivå.</li>
+          <li>Har elever som har tagit SM-medaljer upp t.o.m seniornivå, kvalificerat sig till svenska ungdomslandslag, och vunnit åtskilliga medaljer på nationella tävlingar.</li>
+          <li>Har sedan 2015 uppdraget från Svenska Fäktförbundet att utbilda nya tränare på den nationella tränarutbildningen i fäktning, Steg 1.</li>
+          <li>FIE-utbildad tränare vid den legendariska fäktklubben Tauberbischofsheim i Tyskland.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job-container fade">
+      <img src="img/profbild.png" alt="profilbild">
+      <div class="text-box">
+        <p>Pågående studier på Högskoleingenjörsprogrammet i datateknik, inriktning programmering, på Kungliga Tekniska Högskolan.</p>
+        <p>Kompetenser: Objektorienterad design och programmering (Java), Webb (HTML/CSS/PHP/Javascript), Databaser och frågespråk (SQL/XQuery), Funktionell programmering (Elixir), och Lågnivåprogrammering (C).</p>
+        <ul>
+          <li><a href="http://maxk.se">MaxK.se</a></li>
+          <li><a href="http://threemuskytears.se">Three Musky Tears</a></li>
+          <li><a href="http://idamax.threemuskytears.se">Ida&amp;Max</a></li>
+          <li><a href="https://github.com/fongie">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job-container fade">
+      <img src="img/bandbild.png" alt="bandbild">
+      <div class="text-box">
+        <p>Spelar munspel i tremannabandet <a href="http://threemuskytears.se">Three Musky Tears</a>, en akustisk trio på gitarr, sång, munspel, och cajon, som spelar en svängig blandning av jazz, funk, och pop. Har god erfarenhet av både större scener och mindre privata spelningar, och har en bred repertoar som även lämpar sig för beställningsspelningar.
+          Har tidigare spelat leadgitarr i <a href="https://www.facebook.com/cdlcband/">CdlC</a>, ett för närvarande vilande funkrockband.</p>
+          <ul>
+            <li><a href="http://threemuskytears.se">Three Musky Tears</a></li>
+            <li><a href="https://www.youtube.com/user/fongie">Youtube (harmonica videos)</a></li>
+            <li><a href="https://www.facebook.com/cdlcband/">CdlC</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <footer>
+      <a href="http://www.linkedin.com/in/max-körlinge-947628a2">Linkedin</a>
+      <a href="https://www.facebook.com/max.korlinge">Facebook</a>
+      <a href="https://www.youtube.com/user/fongie">YouTube</a>
+      <a href="mailto:max@maxk.se">Contact Me</a>
+    </footer>
+
+    <script src="js/jobslide.js"></script>
+  </body>
+  </html>

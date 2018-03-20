@@ -1,102 +1,55 @@
+/***** RESPONSIVE CSS FOR MAXK.SE *****/
 
-/* Responsive css to make Tasty Recipes website responsive for larger viewports
- */
+@media screen and (min-width: 920px) {
 
-@media screen and (min-width: 480px) { /*Tablets*/
+  body {
+    font-size: 1.1em;
+  }
 
-    header h1 {
-        font-size: 4em;
-        margin: 0.5em 0;
-    }
+  header {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 
-    nav a, span {
-        font-size: 1.5em;
-        padding: 15px 30px;
-    }
+  footer {
+    margin-top: -60px;
+  }
+
+  #titel {
+    font-size: 6em;
 }
 
-@media screen and (min-width: 660px) { /*Big screens*/
+  #undertitel {
+    font-size: 2em;
+  }
 
-    header {
-        display: flex;
-        border-bottom-style: solid;
-        border-bottom-color: #000066;
-        border-bottom-width: 3px;
-    }
+  .job-container {
+    padding-top: 8%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60%;
+    margin-bottom: 0;
+  }
 
-    header h1 {
-        font-size: 4em;
-        margin: auto;
-    }
+  .job-container img {
+    position: relative;
+    float: left;
+    margin: 0 0 0 0;
+    width: 45%;
+    padding: 20 0 0 0;
+  }
 
-    nav {
-        order: -1; /*Puts it on the right of header*/
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
+  .text-box {
+    position: relative;
+    padding: 20 0 0 0;
+    width: 45%;
+    float: right;
+  }
 
-    nav li {
-        padding-bottom: 20px;
-        margin: auto;
-    }
+  .next, .prev {
+    top: 42%;
+    font-size: 70px;
+  }
 
-    #home {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #home img {
-        width: 70%;
-        margin: 40px 15% 0 15%;
-    }
-
-    #home .button {
-        margin: auto;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .calendar-table {
-        width: 80%;
-        margin: auto;
-        margin-bottom: 90px;
-    }
-
-    .recipe {
-        flex-flow: row wrap;
-        align-items: flex-start;
-    }
-
-    .recipe-header {
-        flex: 1;
-        flex-basis: 50%;
-    }
-
-    .recipe-header img {
-        margin-left: 10px;
-    }
-
-    .instructions-list {
-        flex: 1;
-        flex-basis: 100%;
-    }
-
-    .ingredient-list {
-        flex: 1;
-        flex-basis: 40%;
-        margin-top: 20px;
-    }
-
-}
-@media screen and (min-width: 1178px) { /*Big screens*/
-    header h1 {
-        font-size: 8em;
-    }
-
-    #home img {
-        width: 40%;
-        margin: 40px 30% 0 30%;
-    }
 }
